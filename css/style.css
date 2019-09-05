@@ -1,0 +1,17 @@
+header{
+    margin-bottom: 5%;
+}
+nav{
+    padding: 10px 50px;
+}
+main{
+    margin-bottom: 5%;
+}
+.card-ajuste{
+    box-shadow: 0px 0px 5px 1px #ccc;
+    width: 80%;
+    margin: 0 auto;
+}
+form.card-body{
+    padding-right: 10%;
+}

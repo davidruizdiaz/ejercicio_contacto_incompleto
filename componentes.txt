@@ -1,0 +1,108 @@
+####################
+####### MENU #######
+####################
+
+<nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a id="reg" class="nav-link" href="#">Registro</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Consulta</a>
+        </li>
+    </ul>
+</nav>
+
+
+
+
+
+##########################
+####### FORMULARIO #######
+##########################
+
+<h3 class="card-header">Formulario de contactos</h3>
+<form class="card-body">
+    <div class="form-group row">
+        <label for="nombre" class="col-sm-2 col-form-label text-right">Nombre:</label>
+        <div class="col-sm-10">
+            <input type="text" name="nombre" class="form-control" id="nombre" required placeholder="Ingrese nombre">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="telefono" class="col-sm-2 col-form-label text-right">Teléfono:</label>
+        <div class="col-sm-10">
+            <input type="text" name="telefono" class="form-control" id="telefono" required placeholder="Ingrese teléfono">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label text-right">Email:</label>
+        <div class="col-sm-10">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese email">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="direccion" class="col-sm-2 col-form-label text-right">Direccion:</label>
+        <div class="col-sm-10">
+            <textarea type="text" name="direccion" class="form-control" id="direccion" placeholder="Ingrese teléfono"></textarea>
+        </div>
+    </div>
+    <div class="form-group row justify-content-md-center">
+        <div class="col-sm-8">
+            <button type="submit" class="btn btn-success">Guardar</button>
+
+            <button id="btnCancelar" type="reset" class="btn btn-warning">Cancelar</button>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+#####################
+####### TABLA #######
+#####################
+
+<div class="card card-ajuste">
+    <h3 class="card-header">Datos de contactos</h3>
+    <div class="card-body table-responsive">
+        <table class="table table-hover" id="tbContactos">
+            <thead>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Dirección</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Ramón Valdez</td>
+                    <td>0981611166</td>
+                    <td>rvaldez@mail.net</td>
+                    <td>Salto del Guairá</td>
+                    <td>
+                        <button onclick="" class="bnt btn-outline-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button onclick="" class="bnt btn-outline-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Eliminar">
+                            <i class="fas fa-eraser"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+#######################
+#######  FOOTER #######
+#######################
+
+<div class="card">
+    <div class="card-body text-center bg-light">
+        &copy;Facultad de Ciencias y Tecnología - UNICAN
+    </div>
+</div>
